@@ -21,7 +21,7 @@ M.hl_group = function(palette, opts)
 		String = vim.tbl_extend("force", {
 			fg = palette.gui.green._50,
 			bg = palette.gui.transparent,
-			italic = true,
+			italic = vim.g.quietlight_opts.syntax.italic,
 			ctermfg = palette.cterm.green._0,
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.strings),
